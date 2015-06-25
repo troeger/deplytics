@@ -35,4 +35,4 @@ class Tree():
 		else:
 			# current node has children
 			processed_childs = [self.tree_apply(optype, child_dict, child) for child in child_dict[current]]
-			return self.kinds[nodeKind].process_childs(optype, processed_childs)
+			return self.kinds[nodeKind].process_childs(optype, processed_childs, current)
