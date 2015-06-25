@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+                             http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+    <graph id="graph" edgedefault="directed">
+        <key id="id" for="node" attr.name="id" attr.type="string">
+            <default>0</default>
+        </key>
+        <key id="kind" for="node" attr.name="kind" attr.type="string">
+            <default>node</default>
+        </key>
+        <key id="x" for="node" attr.name="x" attr.type="long">
+            <default>0</default>
+        </key>
+        <key id="y" for="node" attr.name="y" attr.type="long">
+            <default>0</default>
+        </key>
+        <key id="kind" for="graph" attr.name="kind" attr.type="string">
+            <default>faulttree</default>
+        </key>
+        <key id="optional" for="node" attr.name="optional" attr.type="boolean">
+            <default>false</default>
+        </key>
+        <key id="cardinality" for="node" attr.name="cardinality" attr.type="long">
+            <default>1</default>
+        </key>
+        <key id="cost" for="node" attr.name="cost" attr.type="long">
+            <default>1</default>
+        </key>
+        <key id="name" for="node" attr.name="name" attr.type="string">
+            <default>Intermediate Event Set</default>
+        </key>
+        <key id="probability" for="node" attr.name="probability" attr.type="string">
+            <default>[0.5, 0]</default>
+        </key>
+        <key id="probabilityKind" for="node" attr.name="probabilityKind" attr.type="string">
+            <default>Point</default>
+        </key>
+        <key id="width" for="node" attr.name="width" attr.type="long">
+            <default>150</default>
+        </key>
+        <key id="description" for="node" attr.name="description" attr.type="string">
+            <default>Sample Text</default>
+        </key>
+        <key id="height" for="node" attr.name="height" attr.type="long">
+            <default>150</default>
+        </key>
+        <key id="kFormula" for="node" attr.name="kFormula" attr.type="string">
+            <default>N-1</default>
+        </key>
+        <key id="nRange" for="node" attr.name="nRange" attr.type="long">
+            <default>[1, 2]</default>
+        </key>
+        <key id="transfer" for="node" attr.name="transfer" attr.type="string">
+            <default></default>
+        </key>
+        <key id="transferMaxCost" for="node" attr.name="transferMaxCost" attr.type="long">
+            <default>1</default>
+        </key>
+        <key id="k" for="node" attr.name="k" attr.type="long">
+            <default>1</default>
+        </key>
+        <key id="missionTime" for="graph" attr.name="missionTime" attr.type="long">
+            <default>17532</default>
+        </key>
+        <key id="decompositions" for="node" attr.name="decompositions" attr.type="long">
+            <default>1</default>
+        </key>
+        <data key="kind">fuzztree</data>
+        <data key="missionTime">17520</data>
+        <node id="134">
+            <data key="kind">basicEventSet</data>
+            <data key="x">28</data>
+            <data key="y">21</data>
+            <data key="probability">[1, 2008.12]</data>
+            <data key="name">HDD 5+6</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+            <data key="cardinality">2</data>
+        </node>
+        <node id="133">
+            <data key="kind">andGate</data>
+            <data key="x">28</data>
+            <data key="y">19</data>
+        </node>
+        <node id="132">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">28</data>
+            <data key="y">17</data>
+            <data key="name">Raid1 #3 fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="129">
+            <data key="kind">basicEventSet</data>
+            <data key="x">26</data>
+            <data key="y">21</data>
+            <data key="probability">[1, 2008.12]</data>
+            <data key="name">HDD 3+4</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+            <data key="cardinality">2</data>
+        </node>
+        <node id="128">
+            <data key="kind">andGate</data>
+            <data key="x">26</data>
+            <data key="y">19</data>
+        </node>
+        <node id="127">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">26</data>
+            <data key="y">17</data>
+            <data key="name">Raid1 #2 fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="125">
+            <data key="kind">basicEventSet</data>
+            <data key="x">24</data>
+            <data key="y">21</data>
+            <data key="probability">[1, 2008.12]</data>
+            <data key="name">HDD 1+2</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+            <data key="cardinality">2</data>
+        </node>
+        <node id="122">
+            <data key="kind">andGate</data>
+            <data key="x">24</data>
+            <data key="y">19</data>
+        </node>
+        <node id="120">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">24</data>
+            <data key="y">17</data>
+            <data key="name">Raid1 #1 fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="118">
+            <data key="kind">votingOrGate</data>
+            <data key="x">25</data>
+            <data key="y">15</data>
+            <data key="k">2</data>
+        </node>
+        <node id="116">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">25</data>
+            <data key="y">13</data>
+            <data key="name">HDD fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="113">
+            <data key="kind">orGate</data>
+            <data key="x">24</data>
+            <data key="y">11</data>
+        </node>
+        <node id="112">
+            <data key="kind">basicEvent</data>
+            <data key="x">23</data>
+            <data key="y">13</data>
+            <data key="probability">[1, 312132]</data>
+            <data key="name">PCI-E RAID controller in RAID 15 mode fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="108">
+            <data key="kind">orGate</data>
+            <data key="x">21</data>
+            <data key="y">19</data>
+        </node>
+        <node id="104">
+            <data key="kind">orGate</data>
+            <data key="x">15</data>
+            <data key="y">19</data>
+        </node>
+        <node id="102">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">24</data>
+            <data key="y">9</data>
+            <data key="name">Disk fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="89">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">20</data>
+            <data key="y">13</data>
+            <data key="name">CPU 2 Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="88">
+            <data key="kind">andGate</data>
+            <data key="x">22</data>
+            <data key="y">23</data>
+        </node>
+        <node id="87">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">22</data>
+            <data key="y">21</data>
+            <data key="name">Memory controller 2 fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="86">
+            <data key="kind">basicEventSet</data>
+            <data key="x">22</data>
+            <data key="y">25</data>
+            <data key="probability">[1, 4000.33]</data>
+            <data key="name">Memory module fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+            <data key="cardinality">2</data>
+        </node>
+        <node id="85">
+            <data key="kind">andGate</data>
+            <data key="x">20</data>
+            <data key="y">23</data>
+        </node>
+        <node id="84">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">20</data>
+            <data key="y">21</data>
+            <data key="name">Memory controller 1 fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="83">
+            <data key="kind">basicEventSet</data>
+            <data key="x">20</data>
+            <data key="y">25</data>
+            <data key="probability">[1, 4000.33]</data>
+            <data key="name">Memory module fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+            <data key="cardinality">2</data>
+        </node>
+        <node id="81">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">21</data>
+            <data key="y">17</data>
+            <data key="name">Memory Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="80">
+            <data key="kind">basicEvent</data>
+            <data key="x">19</data>
+            <data key="y">17</data>
+            <data key="probability">[1, 1500.23]</data>
+            <data key="name">Nehalem EX processor fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="79">
+            <data key="kind">orGate</data>
+            <data key="x">20</data>
+            <data key="y">15</data>
+        </node>
+        <node id="78">
+            <data key="kind">basicEvent</data>
+            <data key="x">17</data>
+            <data key="y">17</data>
+            <data key="probability">[1, 10131.71]</data>
+            <data key="name">Fan Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="75">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">14</data>
+            <data key="y">13</data>
+            <data key="name">CPU 1 Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="72">
+            <data key="kind">andGate</data>
+            <data key="x">14</data>
+            <data key="y">11</data>
+        </node>
+        <node id="68">
+            <data key="kind">andGate</data>
+            <data key="x">16</data>
+            <data key="y">23</data>
+        </node>
+        <node id="67">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">16</data>
+            <data key="y">21</data>
+            <data key="name">Memory controller 2 fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="66">
+            <data key="kind">basicEventSet</data>
+            <data key="x">16</data>
+            <data key="y">25</data>
+            <data key="probability">[1, 4000.33]</data>
+            <data key="name">Memory module fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+            <data key="cardinality">2</data>
+        </node>
+        <node id="63">
+            <data key="kind">andGate</data>
+            <data key="x">14</data>
+            <data key="y">23</data>
+        </node>
+        <node id="61">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">14</data>
+            <data key="y">21</data>
+            <data key="name">Memory controller 1 fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="57">
+            <data key="kind">basicEventSet</data>
+            <data key="x">8</data>
+            <data key="y">14</data>
+            <data key="probability">[1, 9708.74]</data>
+            <data key="name">Power supply fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+            <data key="cardinality">2</data>
+        </node>
+        <node id="55">
+            <data key="kind">basicEventSet</data>
+            <data key="x">10</data>
+            <data key="y">14</data>
+            <data key="probability">[1, 3121.32]</data>
+            <data key="name">Gigabit PCI-E network card fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+            <data key="cardinality">2</data>
+        </node>
+        <node id="53">
+            <data key="kind">basicEventSet</data>
+            <data key="x">14</data>
+            <data key="y">25</data>
+            <data key="probability">[1, 4000.33]</data>
+            <data key="name">Memory module fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+            <data key="cardinality">2</data>
+        </node>
+        <node id="49">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">15</data>
+            <data key="y">17</data>
+            <data key="name">Memory Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="44">
+            <data key="kind">andGate</data>
+            <data key="x">8</data>
+            <data key="y">12</data>
+        </node>
+        <node id="40">
+            <data key="kind">andGate</data>
+            <data key="x">10</data>
+            <data key="y">12</data>
+        </node>
+        <node id="38">
+            <data key="kind">basicEvent</data>
+            <data key="x">13</data>
+            <data key="y">17</data>
+            <data key="probability">[1, 1500.23]</data>
+            <data key="name">Nehalem EX processor fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="36">
+            <data key="kind">basicEvent</data>
+            <data key="x">17</data>
+            <data key="y">9</data>
+            <data key="probability">[1, 6070.46]</data>
+            <data key="name">Mainboard fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="26">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">8</data>
+            <data key="y">9</data>
+            <data key="name">Power Supply with hot swapping support Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="23">
+            <data key="kind">orGate</data>
+            <data key="x">14</data>
+            <data key="y">15</data>
+        </node>
+        <node id="22">
+            <data key="kind">basicEvent</data>
+            <data key="x">11</data>
+            <data key="y">17</data>
+            <data key="probability">[1, 10131.71]</data>
+            <data key="name">Fan Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="20">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">14</data>
+            <data key="y">9</data>
+            <data key="name">CPU Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="11">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">10</data>
+            <data key="y">9</data>
+            <data key="name">Network Connection Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="9">
+            <data key="kind">orGate</data>
+            <data key="x">17</data>
+            <data key="y">7</data>
+        </node>
+        <node id="7">
+            <data key="kind">intermediateEvent</data>
+            <data key="x">17</data>
+            <data key="y">5</data>
+            <data key="name">Server Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="3">
+            <data key="kind">basicEvent</data>
+            <data key="x">11</data>
+            <data key="y">5</data>
+            <data key="probability">[1, 1870.12]</data>
+            <data key="name">Router Fails</data>
+            <data key="optional">False</data>
+            <data key="cost">1</data>
+        </node>
+        <node id="1">
+            <data key="kind">orGate</data>
+            <data key="x">14</data>
+            <data key="y">3</data>
+        </node>
+        <node id="0">
+            <data key="kind">topEvent</data>
+            <data key="x">14</data>
+            <data key="y">1</data>
+            <data key="name">System Fails</data>
+        </node>
+       <edge source="118" target="132" />
+       <edge source="118" target="127" />
+       <edge source="133" target="134" />
+       <edge source="132" target="133" />
+       <edge source="128" target="129" />
+       <edge source="127" target="128" />
+       <edge source="122" target="125" />
+       <edge source="120" target="122" />
+       <edge source="118" target="120" />
+       <edge source="116" target="118" />
+       <edge source="113" target="116" />
+       <edge source="113" target="112" />
+       <edge source="102" target="113" />
+       <edge source="108" target="87" />
+       <edge source="108" target="84" />
+       <edge source="81" target="108" />
+       <edge source="104" target="67" />
+       <edge source="104" target="61" />
+       <edge source="49" target="104" />
+       <edge source="9" target="102" />
+       <edge source="72" target="89" />
+       <edge source="89" target="79" />
+       <edge source="88" target="86" />
+       <edge source="87" target="88" />
+       <edge source="85" target="83" />
+       <edge source="84" target="85" />
+       <edge source="79" target="81" />
+       <edge source="79" target="80" />
+       <edge source="79" target="78" />
+       <edge source="75" target="23" />
+       <edge source="72" target="75" />
+       <edge source="20" target="72" />
+       <edge source="68" target="66" />
+       <edge source="67" target="68" />
+       <edge source="63" target="53" />
+       <edge source="61" target="63" />
+       <edge source="44" target="57" />
+       <edge source="40" target="55" />
+       <edge source="23" target="49" />
+       <edge source="26" target="44" />
+       <edge source="11" target="40" />
+       <edge source="23" target="38" />
+       <edge source="9" target="36" />
+       <edge source="9" target="26" />
+       <edge source="23" target="22" />
+       <edge source="9" target="20" />
+       <edge source="9" target="11" />
+       <edge source="7" target="9" />
+       <edge source="1" target="7" />
+       <edge source="1" target="3" />
+       <edge source="0" target="1" />
+    </graph>
+</graphml>
