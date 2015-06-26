@@ -23,16 +23,16 @@ class Tree():
 		return json.dumps(json_data, indent=4)
 
 	# apply an operation type in a nested DFS fashion to the tree
-	def tree_apply(self, optype, child_dict=None, current=None):
+	def tree_apply(self, optype, child_dict=None, current_id=None):
 		if child_dict==None:
 			# first call
-			current=self.root()
-			child_dict = nx.dfs_successors(self.g,current)
-		nodeKind = self.g.node[current]['kind']
-		if current not in child_dict:
+			current_id=self.root()
+			child_dict = nx.dfs_successors(self.g, current_id)
+		nodeKind = self.g.node[current_id]['kind']
+		if current_id not in child_dict:
 			# has no children, its a leaf
-			return self.kinds[nodeKind].process(optype, current)
+			return self.kinds[nodeKind].process(optype, current_id)
 		else:
 			# current node has children
-			processed_childs = [self.tree_apply(optype, child_dict, child) for child in child_dict[current]]
-			return self.kinds[nodeKind].process_childs(optype, processed_childs)
+			processed_childs = [self.tree_apply(optype, child_dict, child) for child in child_dict[current_id]]
+			return self.kinds[nodeKind].process_childs(optype, processed_childs, self.g.node[current_id])
