@@ -1,5 +1,5 @@
 import networkx as nx
-import tree
+from . import tree
 from itertools import combinations
 
 class Gate(tree.Tree):
@@ -45,7 +45,7 @@ class VotingOrGate(Gate):
 		elif op_type==tree.OP_PROBABILITY:
 			andstring = " * "
 			orstring = " + "
-		for i in xrange(n, len(nodes)):
+		for i in range(n, len(nodes)):
 			for combo in combinations(nodes, i):
 				res += "("
 				for nodeid in combo:

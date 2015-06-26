@@ -13,7 +13,7 @@ class Tree():
 
 	# get the root node, based on incoming edge count
 	def root(self):
-		parentless=[n for n,d in self.g.in_degree().items() if d==0]
+		parentless=[n for n,d in list(self.g.in_degree().items()) if d==0]
 		assert(len(parentless)==1)
 		return parentless[0]
 
