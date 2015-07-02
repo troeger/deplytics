@@ -11,5 +11,12 @@ class FaultTreeTestCase(DeplyticsTestCase):
 	def testStringify(self):
 		print(self.data.tree_apply(formats.tree.OP_STRINGIFY))
 
+class FuzzTreeTestCase(DeplyticsTestCase):
+	fixture = "fixtures/fuzztree.xml"
+
+	def testStringify(self):
+		print(self.data.tree_apply(formats.tree.OP_STRINGIFY))
+
+
 if __name__ == '__main__':
     unittest.main()
